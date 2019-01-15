@@ -1,9 +1,9 @@
 def GenerateConfig(context):
   """Generate YAML resource configuration."""
 
-  cluster_name = context.properties['test cluster']
-  cluster_zone = context.properties['europe-west4-a']
-  number_of_nodes = context.properties['2']
+  cluster_name = context.properties['CLUSTER_NAME']
+  cluster_zone = context.properties['CLUSTER_ZONE']
+  number_of_nodes = context.properties['NUM_NODES']
 
   resources = []
   resources.append({
